@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Randevo.IsKatmani/Randevo.IsKatmani.csproj" />
+  <Project Path="Randevo.VarlikKatmani/Randevo.VarlikKatmani.csproj" />
+  <Project Path="Randevo.VeriErisimKatmani/Randevo.VeriErisimKatmani.csproj" />
+  <Project Path="Randevo.Web/Randevo.Web.csproj" />
+</Solution>

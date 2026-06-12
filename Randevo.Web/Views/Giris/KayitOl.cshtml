@@ -1,0 +1,29 @@
+﻿@model Randevo.VarlikKatmani.Kullanici
+
+<h1>Randevo - Kayıt Ol</h1>
+
+<form asp-action="KayitOl" asp-controller="Giris" method="post">
+
+    <label>Ad Soyad</label>
+    <input asp-for="AdSoyad" />
+
+    <br />
+
+    <label>E-Posta</label>
+    <input asp-for="Eposta" />
+
+    <br />
+
+    <label>Telefon</label>
+    <input asp-for="Telefon" />
+
+    <br />
+
+    <label>Şifre</label>
+    <input asp-for="Sifre" type="password" />
+
+    <br />
+
+    <button type="submit">Kayıt Ol</button>
+
+</form>
