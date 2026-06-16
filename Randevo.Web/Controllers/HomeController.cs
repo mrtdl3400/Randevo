@@ -15,6 +15,11 @@ namespace Randevo.Web.Controllers
 
         public IActionResult Index()
         {
+            if (HttpContext.Session.GetString("Rol") == null)
+            {
+                return RedirectToAction("GirisYap", "Giris");
+            }
+
             return View();
         }
 

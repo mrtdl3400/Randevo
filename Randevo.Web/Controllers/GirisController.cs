@@ -55,7 +55,17 @@ namespace Randevo.Web.Controllers
                 return View();
             }
 
+            HttpContext.Session.SetInt32("KullaniciId", kullanici.Id);
+            HttpContext.Session.SetString("AdSoyad", kullanici.AdSoyad);
+            HttpContext.Session.SetString("Rol", kullanici.Rol);
+
             return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult CikisYap()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("GirisYap", "Giris");
         }
     }
 }
