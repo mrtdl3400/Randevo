@@ -8,6 +8,16 @@ namespace Randevo.Web.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+        public IActionResult AdminPanel()
+        {
+            if (HttpContext.Session.GetString("Rol") != "Admin")
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            return View();
+        }
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
