@@ -58,6 +58,7 @@ namespace Randevo.Web.Controllers
             HttpContext.Session.SetInt32("KullaniciId", kullanici.Id);
             HttpContext.Session.SetString("AdSoyad", kullanici.AdSoyad);
             HttpContext.Session.SetString("Rol", kullanici.Rol);
+            HttpContext.Session.SetString("Eposta", kullanici.Eposta);
 
             return RedirectToAction("Index", "Home");
         }
@@ -67,5 +68,7 @@ namespace Randevo.Web.Controllers
             HttpContext.Session.Clear();
             return RedirectToAction("GirisYap", "Giris");
         }
+
+        
     }
 }

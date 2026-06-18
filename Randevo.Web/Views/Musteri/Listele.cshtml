@@ -1,0 +1,27 @@
+﻿@model List<Randevo.VarlikKatmani.Musteri>
+
+<h2>Müşteri Listesi</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Ad Soyad</th>
+            <th>Telefon</th>
+            <th>Eposta</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var musteri in Model)
+        {
+            <tr>
+                <td>@musteri.Id</td>
+                <td>@musteri.AdSoyad</td>
+                <td>@musteri.Telefon</td>
+                <td>@musteri.Eposta</td>
+            </tr>
+        }
+
+    </tbody>
+</table>

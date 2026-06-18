@@ -17,5 +17,8 @@ namespace Randevo.VeriErisimKatmani
         public DbSet<Randevu> Randevular { get; set; }
         public DbSet<Odeme> Odemeler { get; set; }
         public DbSet<Bildirim> Bildirimler { get; set; }
+
     }
+
+    
 }
